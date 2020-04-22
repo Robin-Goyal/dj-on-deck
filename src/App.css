@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'Yeysk';
+    src: url('fonts/Yeysk-Regular.eot');
+    src: url('fonts/Yeysk-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Yeysk-Regular.woff2') format('woff2'),
+        url('fonts/Yeysk-Regular.woff') format('woff'),
+        url('fonts/Yeysk-Regular.ttf') format('truetype'),
+        url('fonts/Yeysk-Regular.svg#Yeysk-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+body {
+	font-family:'Roboto', sans-serif;
+	margin:0;
+	padding:0;
+	color:#808080; 
+	font-size:16px;
+	background-color:#fcf9f2; 
+}
+
+ul {
+	margin:0;
+	padding:0;
+	list-style-type:none; 
+}
+
+strong {
+	font-weight:700;
+}
+
+.main-container {
+	width:100%;
+	max-width:750px;
+	margin:0 auto; 
+	padding:0 0 2em; 
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:35px 70px 25px; 
+  width:100%; 
+}
+.App-header .toggle-btn {
+	cursor:pointer; 
+}
+.App-header .page-title {
+	flex-grow:1; 
+}
+
+.App-header .page-title h1 {
+color:#42210B;	
+margin:0 0 10px;
+font-size:30px;
+text-transform:uppercase; 
+font-family: 'Yeysk';
+}
+
+.App-header .clear-btn a {
+	color:#d09a44;
+	font-size:26px;
+	font-weight:500; 
+	text-decoration:none; 
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* data table */
+.data-table tr:first-child td {
+	border-top:1px solid #e6e6e6;
+}
+.data-table tr td { 
+	border-bottom:1px solid #e6e6e6;
+	padding:23px 10px; 
+	text-align:left;
+}
+.data-table tr td.icon {
+	padding-left:70px; 
+}
+
+.data-table tr td.likes, .data-table tr td.price, .data-table tr td.followers {
+	padding-right:55px; 
+	text-align:center;
+}
+
+.data-table tr td.content .info-text {
+	font-size:26px; 
+}
+.data-table tr td.price {
+	color:#d09a44;
+	font-size:28px;
+	font-weight:700; 
+	text-align:center;
+}
+
+.data-table tr td .time
+{
+	color:#b2a396;
+	font-weight:500; 
+}
+
+.data-table tr td.likes, .data-table tr td.followers {
+	color:#42210B;
+	font-size:28px; 
+}
+
+.data-table tr td.likes .text, .data-table tr td.followers .text {
+	display:block; 
+	font-size:16px; 
+	color:#b2a396;
+}
+@media (max-width:667px) {
+.App-header {
+      padding:35px 15px 25px;
+	}	
+	.responsive-table tr td { 
+	  padding:10px 15px!important; 
+	}
+}
+@media (max-width:480px) {
+	body {
+		font-size:14px; 
+	}
+	.App-header .page-title h1, .App-header .clear-btn a {
+		font-size:16px; 
+	}
+	.App-header .toggle-btn svg {
+		width:30px; 
+	}
+	.responsive-table tr {
+		display:block; 
+	}
+   .responsive-table tr td {
+		width:100%;
+	   float:left; 
+	   text-align:left!important; 
+	   border:0!important;  
+	}
+	.responsive-table tr:first-child td:first-child {
+	border-top:1px solid #e6e6e6!important;	
+	}
+	.responsive-table tr td:first-child {
+	padding-top:35px!important; 
+	}
+	.responsive-table tr td:last-child {
+	border-bottom:1px solid #e6e6e6!important;
+	padding-bottom:35px!important; 
+	}
+	.data-table tr td.content .info-text {
+		font-size:24px; 
+	}
+}
